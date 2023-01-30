@@ -1,12 +1,11 @@
 import { Component } from "react";
-import { Welcome } from "./Welcome";
 
 export class App extends Component {
-
+    sum = (a, b) => a + b
     render(){
         return(
             <div>
-                <Welcome name="Jimmy"/>
+                <h2>The result is {this.sum(11, 22)}</h2>
             </div>
         )
     }
