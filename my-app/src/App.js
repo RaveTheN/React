@@ -5,6 +5,6 @@ export class App extends Component {
 
     
     render(){
-        return <Welcome name="John" age={64}/>
+        return <Welcome name="John" age={2}/>
     }
 }
