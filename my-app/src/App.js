@@ -6,7 +6,7 @@ export class App extends Component {
     render(){
         return(
             <div>
-                <Counter />
+                <Counter initialValue={25} incrementBy={2} timeout={500}/>
             </div>
         )
     }
