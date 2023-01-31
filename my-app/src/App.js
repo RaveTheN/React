@@ -7,7 +7,7 @@ export class App extends Component {
         return <Welcome name="Johnny" />
         //Senza alcun prop "name" passato al coomponente "Welcome", verrebbe renderizzato il contenuto
     //all'interno del tag p del componente "Welcome", ma omettendo completamente tutto il contenuto di {},
-    //parentesi comprese. Non so se è possibile settare un valore di default per "name", ma credo che il valore che 
-    //assegniamo (ad esempio) in questo return, possa comunque essere cambiato in seguito.
+    //parentesi comprese. È possibile settare un "name" di default usando .defaultProps direttamente nel
+    //componente che utilizza quella prop
     }
 }
