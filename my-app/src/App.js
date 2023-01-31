@@ -3,9 +3,8 @@ import { Welcome } from "./Welcome";
 
 export class App extends Component {
 
-    //Whenever a prop is not a string, it can be
-    //passed by embedding an expression within curly brackets
+    
     render(){
-        return <Welcome name={<strong>Johnny</strong>}/>
+        return <Welcome name={<strong>Johnny</strong>} age={64}/>
     }
 }
