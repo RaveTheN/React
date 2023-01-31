@@ -1,10 +1,13 @@
 import { Component } from "react";
-import { Welcome } from "./Welcome";
+import { Counter } from "./Counter";
 
 export class App extends Component {
 
-    
     render(){
-        return <Welcome name="John" age={2}/>
+        return(
+            <div>
+                <Counter />
+            </div>
+        )
     }
 }
