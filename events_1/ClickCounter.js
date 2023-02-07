@@ -6,8 +6,7 @@ export class ClickCounter extends Component{
         count: this.props.initialValue,
     }
 
-    handleCounterIncrement = (event) => {
-        console.log(event)
+    handleCounterIncrement = () => {
         
         this.setState((state) =>{
             return {
