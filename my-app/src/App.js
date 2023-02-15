@@ -1,14 +1,13 @@
-import { Component } from "react";
-import { Login } from "./Login";
 
-export class App extends Component {
+import  {ClickCounter}  from "./ClickCounter";
 
-    render(){
+export function App() {
+
+    
         return(
             <div>
-                <Login />
+                <ClickCounter />
             </div>
         )
-    }
+    
 }
-
