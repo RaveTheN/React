@@ -8,12 +8,21 @@ export function App() {
     <div>
       <div>
         <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> |{" "}
-        <Link to="users/:username">Github user</Link>
+        <Link to="users/:username">Github user</Link> |{" "}
       </div>
       <Routes>
         <Route path="/" element={<Welcome name="Wario" />} />
         <Route path="/counter" element={<ClickCounter />} />
         <Route path="users/:username" element={<ShowGithubUser />} />
+        <Route
+          path="*"
+          element={
+            <div>
+              <p>Not Found</p>
+              <Link to="/">Go Home</Link>
+            </div>
+          }
+        />
       </Routes>
     </div>
   );

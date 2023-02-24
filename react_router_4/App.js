@@ -14,6 +14,7 @@ export function App() {
         <Route path="/" element={<Welcome name="Wario" />} />
         <Route path="/counter" element={<ClickCounter />} />
         <Route path="users/:username" element={<ShowGithubUser />} />
+        
       </Routes>
     </div>
   );
