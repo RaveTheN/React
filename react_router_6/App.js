@@ -10,13 +10,14 @@ export function App() {
     <div>
       <div>
         <Link to="/">Home</Link> | <Link to="/counter">Counter</Link> |{" "}
-        <Link to="/users">Github user</Link>
+        <Link to="users/:username">Github user</Link> |{" "}
       </div>
       <Routes>
         <Route path="/" element={<Welcome name="Wario" />} />
         <Route path="/counter" element={<ClickCounter />} />
         <Route path="/users" element={<GithubUserList />}>
           <Route path=":username" element={<ShowGithubUser />}>
+            <Route path=":username" element={<GithubUser />} />
           </Route>
         </Route>
         <Route
