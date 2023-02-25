@@ -51,7 +51,7 @@ export class GithubUserList extends Component {
           <button onClick={this.addnewUsername}>Add user</button>
           {this.state.usernames.map((item, index) => (
             <li key={item + index}>
-              <Link to={`/users/${item}/${item}`}>{item}</Link>
+              <Link to={`/users/${item}`}>{item}</Link>
               <button onClick={() => this.removeUser(index)}>remove</button>
             </li>
           ))}
